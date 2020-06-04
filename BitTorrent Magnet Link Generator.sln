@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29905.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitTorrent Magnet Link Generator", "BitTorrent Magnet Link Generator\BitTorrent Magnet Link Generator.csproj", "{920F2ACC-DB11-477A-9B33-6B057113FC69}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{920F2ACC-DB11-477A-9B33-6B057113FC69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{920F2ACC-DB11-477A-9B33-6B057113FC69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{920F2ACC-DB11-477A-9B33-6B057113FC69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{920F2ACC-DB11-477A-9B33-6B057113FC69}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D48D28CC-A71D-404F-BE42-F29AC497262C}
+	EndGlobalSection
+EndGlobal
