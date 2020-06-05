@@ -108,5 +108,11 @@ namespace BitTorrent_Magnet_Link_Generator
         {
             System.Diagnostics.Process.Start("https://github.com/thetooi/BitTorrent-Magnet-Link-Generator");
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Form dlg1 = new DonateForm();
+            dlg1.ShowDialog();
+        }
     }
 }

@@ -117,63 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="txtTRACKER_LIST.Text" xml:space="preserve">
-    <value>http://sukebei.tracker.wf:8888/announce
-udp://tracker.opentrackr.org:1337/announce
-udp://p4p.arenabg.com:1337/announce
-udp://tracker.coppersurfer.tk:6969/announce
-udp://tracker.internetwarriors.net:1337
-udp://tracker.internetwarriors.net:1337/announce
-udp://exodus.desync.com:6969/announce
-udp://open.stealth.si:80/announce
-udp://9.rarbg.me:2710/announce
-udp://9.rarbg.me:2710
-udp://p4p.arenabg.ch:1337/announce
-http://anidex.moe:6969/announce
-http://125.227.35.196:6969/announce
-http://210.244.71.25:6969/announce
-http://210.244.71.26:6969/announce
-http://213.159.215.198:6970/announce
-http://37.19.5.139:6969/announce
-http://37.19.5.155:6881/announce
-http://46.4.109.148:6969/announce
-http://87.248.186.252:8080/announce
-http://asmlocator.ru:34000/1hfZS1k4jh/announce
-http://bt.evrl.to/announce
-http://bt.pornolab.net/ann?uk=G7n8vXUdTt
-http://bt.rutracker.org/ann
-http://mgtracker.org:6969/announce
-http://pubt.net:2710/announce
-http://tracker.baravik.org:6970/announce
-http://tracker.dler.org:6969/announce
-http://tracker.filetracker.pl:8089/announce
-http://tracker.grepler.com:6969/announce
-http://tracker.mg64.net:6881/announce
-http://tracker.tiny-vps.com:6969/announce
-http://tracker.torrentyorg.pl/announce
-http://tracker1.wasabii.com.tw:6969/announce
-http://tracker2.wasabii.com.tw:6969/announce
-udp://168.235.67.63:6969
-udp://182.176.139.129:6969
-udp://37.19.5.155:2710
-udp://46.148.18.250:2710
-udp://46.4.109.148:6969
-udp://[2001:67c:28f8:92::1111:1]:2710
-udp://bt.xxx-tracker.com:2710
-udp://ipv6.leechers-paradise.org:6969
-udp://opentor.org:2710
-udp://public.popcorn-tracker.org:6969
-udp://tracker.blackunicorn.xyz:6969
-udp://tracker.ccc.de:80
-udp://tracker.coppersurfer.tk:6969
-udp://tracker.filetracker.pl:8089
-udp://tracker.grepler.com:6969
-udp://tracker.leechers-paradise.org:6969
-udp://tracker.openbittorrent.com:80
-udp://tracker.opentrackr.org:1337
-udp://tracker.publicbt.com:80
-udp://tracker.tiny-vps.com:6969</value>
-  </data>
   <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
