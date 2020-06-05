@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace BitTorrent_Magnet_Link_Generator
@@ -15,11 +8,16 @@ namespace BitTorrent_Magnet_Link_Generator
         public Form1()
         {
             InitializeComponent();
+            txtINFO_HASH.Focus();
         }
 
         private void txtINFO_HASH_TextChanged(object sender, EventArgs e)
         {
             txtINFO_HASH.CharacterCasing = CharacterCasing.Upper;
+            if (txtINFO_HASH.Text.Length == 40)
+            {
+                txtTORRENT_NAME.Focus();
+            }
             GenLink();
         }
 
