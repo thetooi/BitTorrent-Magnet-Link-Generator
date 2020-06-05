@@ -199,7 +199,6 @@
             // 
             // Form1
             // 
-            this.AcceptButton = this.btnGen;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.button1;
