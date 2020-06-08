@@ -8,7 +8,7 @@ namespace BitTorrent_Magnet_Link_Generator
         public Form1()
         {
             InitializeComponent();
-            txtINFO_HASH.Focus();
+            _ = txtINFO_HASH.Focus();
         }
 
         private void txtINFO_HASH_TextChanged(object sender, EventArgs e)
@@ -16,32 +16,23 @@ namespace BitTorrent_Magnet_Link_Generator
             txtINFO_HASH.CharacterCasing = CharacterCasing.Upper;
             if (txtINFO_HASH.Text.Length == 40)
             {
-                txtTORRENT_NAME.Focus();
+                _ = txtTORRENT_NAME.Focus();
             }
             GenLink();
         }
 
-        private void txtTORRENT_NAME_TextChanged(object sender, EventArgs e)
-        {
-            GenLink();
-        }
+        private void txtTORRENT_NAME_TextChanged(object sender, EventArgs e) => GenLink();
 
-        private void btnGen_Click(object sender, EventArgs e)
-        {
-            GenLink();
-        }
+        private void btnGen_Click(object sender, EventArgs e) => GenLink();
 
-        private void txtTRACKER_LIST_TextChanged(object sender, EventArgs e)
-        {
-            GenLink();
-        }
+        private void txtTRACKER_LIST_TextChanged(object sender, EventArgs e) => GenLink();
 
         private void GenLink()
         {
-            if (txtINFO_HASH.Text != "" && txtINFO_HASH.Text.Length == 40)
+            if (string.IsNullOrEmpty(txtINFO_HASH.Text) != true && txtINFO_HASH.Text.Length == 40)
             {
                 string strtext = txtTRACKER_LIST.Text;
-                var textArr = strtext.Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries);
+                string[] textArr = strtext.Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries);
                 int txtLine = textArr.Length;
                 string TORRENT_NAME;
                 try
@@ -54,8 +45,8 @@ namespace BitTorrent_Magnet_Link_Generator
                     {
                         TORRENT_NAME = txtTORRENT_NAME.Text;
                     }
-                    var trackers = txtTRACKER_LIST.Text;
-                    var data = "magnet:"
+                    string trackers = txtTRACKER_LIST.Text;
+                    string data = "magnet:"
                         + "?xt=urn:btih:" + txtINFO_HASH.Text
                         + "&dn=" + Uri.EscapeDataString(TORRENT_NAME);
                     for (int i = 0; i <= txtLine - 1; i++)
@@ -66,7 +57,7 @@ namespace BitTorrent_Magnet_Link_Generator
                 }
                 catch (Exception e)
                 {
-                    MessageBox.Show(e.ToString());
+                    _ = MessageBox.Show(e.ToString());
                 }
             }
         }
@@ -75,14 +66,14 @@ namespace BitTorrent_Magnet_Link_Generator
         {
             if (txtMAGNET_LINK.Text != "")
             {
-                System.Diagnostics.Process.Start(txtMAGNET_LINK.Text);
+                _ = System.Diagnostics.Process.Start(txtMAGNET_LINK.Text);
             }
         }
 
         private void txtMAGNET_LINK_Click(object sender, EventArgs e)
         {
             txtMAGNET_LINK.SelectAll();
-            txtMAGNET_LINK.Focus();
+            _ = txtMAGNET_LINK.Focus();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -90,27 +81,19 @@ namespace BitTorrent_Magnet_Link_Generator
             txtINFO_HASH.Clear();
             txtTORRENT_NAME.Clear();
             txtMAGNET_LINK.Clear();
+            _ = txtINFO_HASH.Focus();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Clipboard.SetText(txtMAGNET_LINK.Text);
-        }
+        private void button2_Click(object sender, EventArgs e) => Clipboard.SetText(txtMAGNET_LINK.Text);
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process.Start("bitcoin:bc1qmrvjhkc6kc79uw049nuquls4pknex3la03fyk4?label=Donate to BitTorrent Magnet Link Generator");
-        }
+        private void pictureBox1_Click(object sender, EventArgs e) => System.Diagnostics.Process.Start("bitcoin:bc1qmrvjhkc6kc79uw049nuquls4pknex3la03fyk4?label=Donate to BitTorrent Magnet Link Generator");
 
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process.Start("https://github.com/thetooi/BitTorrent-Magnet-Link-Generator");
-        }
+        private void pictureBox2_Click(object sender, EventArgs e) => System.Diagnostics.Process.Start("https://github.com/thetooi/BitTorrent-Magnet-Link-Generator");
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             Form dlg1 = new DonateForm();
-            dlg1.ShowDialog();
+            _ = dlg1.ShowDialog();
         }
     }
 }
