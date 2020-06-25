@@ -108,6 +108,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="magnet_link_u8q_icon.ico" />
+    <Content Include="trackerlist.txt" />
     <None Include="Resources\bitcoin.png" />
     <None Include="Resources\Your_Bitcoin_QR_Code.png" />
     <None Include="Resources\github.png" />
