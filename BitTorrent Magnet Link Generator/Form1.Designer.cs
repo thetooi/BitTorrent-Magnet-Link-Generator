@@ -82,7 +82,7 @@
             this.txtTRACKER_LIST.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtTRACKER_LIST.Size = new System.Drawing.Size(282, 305);
             this.txtTRACKER_LIST.TabIndex = 3;
-            this.txtTRACKER_LIST.Text = resources.GetString("txtTRACKER_LIST.Text");
+            this.txtTRACKER_LIST.Text = "udp://tracker.openbittorrent.com:80\r\nudp://tracker.opentrackr.org:1337/announce";
             this.txtTRACKER_LIST.TextChanged += new System.EventHandler(this.txtTRACKER_LIST_TextChanged);
             // 
             // btnGen

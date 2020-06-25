@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Windows.Forms;
 
 namespace BitTorrent_Magnet_Link_Generator
@@ -8,6 +9,7 @@ namespace BitTorrent_Magnet_Link_Generator
         public Form1()
         {
             InitializeComponent();
+            LoadTrackerList();
             _ = txtINFO_HASH.Focus();
         }
 
@@ -20,7 +22,16 @@ namespace BitTorrent_Magnet_Link_Generator
             }
             GenLink();
         }
+        public static string TxtTrackerList = @"trackerlist.txt";
 
+        private void LoadTrackerList()
+        {
+            if (File.Exists(TxtTrackerList))
+            {    
+                string list = File.ReadAllText(TxtTrackerList);
+                txtTRACKER_LIST.Text = list;
+            }
+        }
         private void txtTORRENT_NAME_TextChanged(object sender, EventArgs e) => GenLink();
 
         private void btnGen_Click(object sender, EventArgs e) => GenLink();
