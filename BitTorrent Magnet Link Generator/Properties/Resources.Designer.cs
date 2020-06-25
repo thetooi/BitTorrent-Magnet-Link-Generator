@@ -89,25 +89,5 @@ namespace BitTorrent_Magnet_Link_Generator.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap qrcode_bitcoin {
-            get {
-                object obj = ResourceManager.GetObject("qrcode_bitcoin", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Your_Bitcoin_QR_Code {
-            get {
-                object obj = ResourceManager.GetObject("Your_Bitcoin_QR_Code", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
     }
 }
