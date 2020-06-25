@@ -95,13 +95,17 @@ namespace BitTorrent_Magnet_Link_Generator
             _ = txtINFO_HASH.Focus();
         }
 
-        private void button2_Click(object sender, EventArgs e) => Clipboard.SetText(txtMAGNET_LINK.Text);
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText(txtMAGNET_LINK.Text);
+        }
 
-        private void pictureBox1_Click(object sender, EventArgs e) => System.Diagnostics.Process.Start("bitcoin:bc1qmrvjhkc6kc79uw049nuquls4pknex3la03fyk4?label=Donate to BitTorrent Magnet Link Generator");
+        private void PictureBox2_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/thetooi/BitTorrent-Magnet-Link-Generator");
+        }
 
-        private void pictureBox2_Click(object sender, EventArgs e) => System.Diagnostics.Process.Start("https://github.com/thetooi/BitTorrent-Magnet-Link-Generator");
-
-        private void pictureBox3_Click(object sender, EventArgs e)
+        private void PictureBox3_Click(object sender, EventArgs e)
         {
             Form dlg1 = new DonateForm();
             _ = dlg1.ShowDialog();

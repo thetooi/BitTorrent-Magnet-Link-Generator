@@ -108,11 +108,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="magnet_link_u8q_icon.ico" />
+    <None Include="Resources\Donate bitcoin.png" />
     <Content Include="trackerlist.txt" />
     <None Include="Resources\bitcoin.png" />
-    <None Include="Resources\Your_Bitcoin_QR_Code.png" />
     <None Include="Resources\github.png" />
-    <None Include="Resources\qrcode_bitcoin.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
