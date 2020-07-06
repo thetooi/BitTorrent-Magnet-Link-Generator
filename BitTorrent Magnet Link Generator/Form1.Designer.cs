@@ -54,7 +54,7 @@
             this.txtINFO_HASH.Location = new System.Drawing.Point(101, 18);
             this.txtINFO_HASH.MaxLength = 40;
             this.txtINFO_HASH.Name = "txtINFO_HASH";
-            this.txtINFO_HASH.Size = new System.Drawing.Size(366, 20);
+            this.txtINFO_HASH.Size = new System.Drawing.Size(366, 21);
             this.txtINFO_HASH.TabIndex = 0;
             this.txtINFO_HASH.TextChanged += new System.EventHandler(this.txtINFO_HASH_TextChanged);
             // 
@@ -62,7 +62,7 @@
             // 
             this.txtTORRENT_NAME.Location = new System.Drawing.Point(101, 72);
             this.txtTORRENT_NAME.Name = "txtTORRENT_NAME";
-            this.txtTORRENT_NAME.Size = new System.Drawing.Size(366, 20);
+            this.txtTORRENT_NAME.Size = new System.Drawing.Size(366, 21);
             this.txtTORRENT_NAME.TabIndex = 1;
             this.txtTORRENT_NAME.TextChanged += new System.EventHandler(this.txtTORRENT_NAME_TextChanged);
             // 
@@ -70,7 +70,7 @@
             // 
             this.txtMAGNET_LINK.Location = new System.Drawing.Point(101, 158);
             this.txtMAGNET_LINK.Name = "txtMAGNET_LINK";
-            this.txtMAGNET_LINK.Size = new System.Drawing.Size(366, 20);
+            this.txtMAGNET_LINK.Size = new System.Drawing.Size(366, 21);
             this.txtMAGNET_LINK.TabIndex = 2;
             this.txtMAGNET_LINK.Click += new System.EventHandler(this.txtMAGNET_LINK_Click);
             // 
@@ -98,18 +98,18 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(45, 21);
+            this.label1.Location = new System.Drawing.Point(39, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 13);
+            this.label1.Size = new System.Drawing.Size(55, 13);
             this.label1.TabIndex = 5;
             this.label1.Text = "info hash:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(29, 75);
+            this.label2.Location = new System.Drawing.Point(20, 75);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 13);
+            this.label2.Size = new System.Drawing.Size(74, 13);
             this.label2.TabIndex = 6;
             this.label2.Text = "torrent name:";
             // 
@@ -128,7 +128,7 @@
             this.linkMAGNET.AutoSize = true;
             this.linkMAGNET.Location = new System.Drawing.Point(26, 161);
             this.linkMAGNET.Name = "linkMAGNET";
-            this.linkMAGNET.Size = new System.Drawing.Size(69, 13);
+            this.linkMAGNET.Size = new System.Drawing.Size(68, 13);
             this.linkMAGNET.TabIndex = 9;
             this.linkMAGNET.TabStop = true;
             this.linkMAGNET.Text = "Magnet Link:";
@@ -139,7 +139,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(98, 41);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(310, 13);
+            this.label3.Size = new System.Drawing.Size(303, 13);
             this.label3.TabIndex = 10;
             this.label3.Text = "Example: A94A8FE5CCB19BA61C4C0873D391E987982FBBD3";
             // 
@@ -148,7 +148,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(98, 95);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(280, 13);
+            this.label4.Size = new System.Drawing.Size(293, 13);
             this.label4.TabIndex = 11;
             this.label4.Text = "(this is not an URL, this is a title for the torrent in the client)";
             // 
@@ -217,6 +217,7 @@
             this.Controls.Add(this.txtMAGNET_LINK);
             this.Controls.Add(this.txtTORRENT_NAME);
             this.Controls.Add(this.txtINFO_HASH);
+            this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
