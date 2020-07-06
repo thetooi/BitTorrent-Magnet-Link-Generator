@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace BitTorrent_Magnet_Link_Generator
@@ -15,6 +16,7 @@ namespace BitTorrent_Magnet_Link_Generator
 
         private void txtINFO_HASH_TextChanged(object sender, EventArgs e)
         {
+            
             txtINFO_HASH.CharacterCasing = CharacterCasing.Upper;
             if (txtINFO_HASH.Text.Length == 40)
             {
@@ -109,6 +111,12 @@ namespace BitTorrent_Magnet_Link_Generator
         {
             Form dlg1 = new DonateForm();
             _ = dlg1.ShowDialog();
+        }
+
+        private void txtINFO_HASH_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar)
+            && !char.IsSeparator(e.KeyChar) && !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
         }
     }
 }

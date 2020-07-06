@@ -57,6 +57,7 @@
             this.txtINFO_HASH.Size = new System.Drawing.Size(366, 21);
             this.txtINFO_HASH.TabIndex = 0;
             this.txtINFO_HASH.TextChanged += new System.EventHandler(this.txtINFO_HASH_TextChanged);
+            this.txtINFO_HASH.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtINFO_HASH_KeyPress);
             // 
             // txtTORRENT_NAME
             // 
