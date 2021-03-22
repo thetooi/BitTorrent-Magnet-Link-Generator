@@ -1,7 +1,11 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="BitTorrent_Magnet_Link_Generator.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="TRACKER_LIST" Type="System.String" Scope="User">
+      <Value Profile="(Default)">udp://tracker.openbittorrent.com:80
+udp://tracker.opentrackr.org:1337/announce
+</Value>
+    </Setting>
+  </Settings>
 </SettingsFile>

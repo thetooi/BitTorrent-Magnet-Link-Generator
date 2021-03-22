@@ -1,6 +1,5 @@
 ﻿using System;
 using System.IO;
-using System.Linq;
 using System.Windows.Forms;
 
 namespace BitTorrent_Magnet_Link_Generator
@@ -10,8 +9,6 @@ namespace BitTorrent_Magnet_Link_Generator
         public Form1()
         {
             InitializeComponent();
-            LoadTrackerList();
-            _ = txtINFO_HASH.Focus();
         }
 
         private void txtINFO_HASH_TextChanged(object sender, EventArgs e)
@@ -117,6 +114,22 @@ namespace BitTorrent_Magnet_Link_Generator
         {
             e.Handled = !char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar)
             && !char.IsSeparator(e.KeyChar) && !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            LoadTrackerList();
+            _ = txtINFO_HASH.Focus();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            txtTRACKER_LIST.Text = Properties.Settings.Default.TRACKER_LIST;
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Properties.Settings.Default.TRACKER_LIST = txtTRACKER_LIST.Text;
         }
     }
 }
