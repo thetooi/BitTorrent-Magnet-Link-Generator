@@ -130,6 +130,7 @@ namespace BitTorrent_Magnet_Link_Generator
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             Properties.Settings.Default.TRACKER_LIST = txtTRACKER_LIST.Text;
+            Properties.Settings.Default.Save();
         }
     }
 }
